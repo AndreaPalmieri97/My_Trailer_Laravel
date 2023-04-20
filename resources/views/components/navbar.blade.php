@@ -7,10 +7,10 @@
       <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
         <ul class="navbar-nav mb-2 mb-lg-0 text-center">
           <li class="nav-item">
-            <a class="nav-link active text-danger mx-4 fs-5 fw-semibold" aria-current="page" href="#">Home</a>
+            <a class="nav-link active text-danger mx-4 fs-5 fw-semibold" aria-current="page" href="{{route('home')}}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-danger mx-4 fs-5 fw-semibold" aria-current="page" href="#">Home</a>
+            <a class="nav-link active text-danger mx-4 fs-5 fw-semibold" aria-current="page" href="{{route ('trailer.create')}}">Aggiungi</a>
           </li>
           <li class="nav-item">
             <a class="nav-link active text-danger mx-4 fs-5 fw-semibold" aria-current="page" href="#">Home</a>

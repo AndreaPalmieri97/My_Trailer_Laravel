@@ -1,6 +1,8 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\PublicController;
+use App\Http\Controllers\TrailerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +15,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [PublicController::class, 'home'])->name('home');
+
+Route::get('/trailers/create', [TrailerController::class, 'create'])->name('trailer.create');
+
+Route::post('/trailers/store', [TrailerController::class, 'store'])->name('trailer.store');
