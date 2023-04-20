@@ -1,15 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    @vite (['resources/css/app.css', 'resources/js/app.js'])
-</head>
-<body>
-    
-</body>
-</html>
+<x-layout>
 
-<x-navbar />
+    <header class="masthead">
+        <div class="container-fluid h-100">
+          <div class="row h-100 align-items-center">
+            <div class="col-12">
+              <h1 class="fw-light fw-bold fs-1 mx-5 text-danger">MyTrailer</h1>
+              <p class="lead fw-normal text-white mx-5 fs-2"> <i> Ogni trailer a portata di mano</i></p>
+            </div>
+          </div>
+        </div>
+      </header>
+
+</x-layout>
+

@@ -1,3 +1,11 @@
 .logo {
     width: 42px;
 }
+
+.masthead {
+    background-image: url('/public/img/masthead.jpg');
+    height: 70vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
