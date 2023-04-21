@@ -1,5 +1,13 @@
+body{
+    font-family: 'Prompt', sans-serif;
+}
+
 .logo {
-    width: 30px;
+    width: 25px;
+}
+
+.nav-hov:hover{
+    color: white !important;
 }
 
 .masthead {
@@ -27,3 +35,4 @@
     width: 100%;
 
 }
+

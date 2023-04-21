@@ -3,7 +3,7 @@
 <div class="container">
     <div class="row my-5">
         <div class="col-6">
-            <h1 class="text-danger">Lista Trailers</h1>
+            <h1 class="text-danger"><i class="fa-solid fa-list text-danger"></i> Lista Trailers</h1>
         </div>
     </div>
 </div>
