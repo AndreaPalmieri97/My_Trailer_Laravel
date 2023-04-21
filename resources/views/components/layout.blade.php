@@ -8,10 +8,9 @@
     @vite (['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body class="sfondo">
+
     <x-navbar />
     
-
-
     @if (session('message'))
         <div class="alert alert-warning alert-dismissible fade show" role="alert">
             {{ session('message') }}
@@ -21,8 +20,9 @@
     
         
         {{$slot}}
-
-
+        
+        <x-footer /> 
 
 </body>
+
 </html>
