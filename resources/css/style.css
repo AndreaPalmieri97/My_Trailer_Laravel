@@ -1,5 +1,5 @@
 .logo {
-    width: 42px;
+    width: 30px;
 }
 
 .masthead {
@@ -10,7 +10,12 @@
     background-position: center;
 }
 
+.sfondo {
+    background-color: rgb(0, 0, 0);
+}
+
 .card-img-top {
-    height: 400px;
+    height: 370px;
+    width: 100%;
 
 }

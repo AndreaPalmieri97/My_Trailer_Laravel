@@ -13,7 +13,7 @@
 
         @foreach ($trailers as $trailer)
         
-        <div class="col-12 col-md-3 my-5 mx-3">
+        <div class="col-12 col-md-3 my-5">
             
             <x-cards 
                 :trailer="$trailer"

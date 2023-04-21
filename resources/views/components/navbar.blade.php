@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg bg-dark">
+<nav class="navbar navbar-expand-lg bg-dark sticky-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img class="logo mx-3" src="\img\logo.png" alt=""></a>
+      <a class="navbar-brand" href="{{route('home')}}"><img class="logo mx-3" src="\img\logo.png" alt=""></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -10,10 +10,10 @@
             <a class="nav-link active text-danger mx-4 fs-5 fw-semibold" aria-current="page" href="{{route('home')}}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-danger mx-4 fs-5 fw-semibold" aria-current="page" href="{{route ('trailers.create')}}">Aggiungi</a>
+            <a class="nav-link active text-danger mx-4 fs-5 fw-semibold" aria-current="page" href="{{route('trailers.index')}}">MyTrailers</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-danger mx-4 fs-5 fw-semibold" aria-current="page" href="{{route('trailers.index')}}">MyTrailers</a>
+            <a class="nav-link active text-danger mx-4 fs-5 fw-semibold" aria-current="page" href="{{route ('trailers.create')}}">Aggiungi</a>
           </li>
         </ul>
       </div>
@@ -24,5 +24,5 @@
         </form>
     </div>
     
-    </div>
-  </nav>
+  </div>
+</nav>
