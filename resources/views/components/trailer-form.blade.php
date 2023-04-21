@@ -1,4 +1,4 @@
-<form class="container" method="post" action=" {{route('trailer.store')}}">
+<form class="container" method="post" action="{{route('trailers.store')}}" enctype="multipart/form-data">
     @csrf
     <div class="row">
         <div class="mb-3 col-4">

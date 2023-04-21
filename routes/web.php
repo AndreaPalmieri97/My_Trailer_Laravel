@@ -17,6 +17,10 @@ use App\Http\Controllers\TrailerController;
 
 Route::get('/', [PublicController::class, 'home'])->name('home');
 
-Route::get('/trailers/create', [TrailerController::class, 'create'])->name('trailer.create');
+Route::get('/trailers/create', [TrailerController::class, 'create'])->name('trailers.create');
 
-Route::post('/trailers/store', [TrailerController::class, 'store'])->name('trailer.store');
+Route::post('/trailers/store', [TrailerController::class, 'store'])->name('trailers.store');
+
+Route::get('/trailers/index', [TrailerController::class, 'index'])->name('trailers.index');
+
+Route::get('/trailers/show/{id}', [TrailerController::class, 'show'])->name('trailers.show');

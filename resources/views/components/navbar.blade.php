@@ -10,10 +10,10 @@
             <a class="nav-link active text-danger mx-4 fs-5 fw-semibold" aria-current="page" href="{{route('home')}}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-danger mx-4 fs-5 fw-semibold" aria-current="page" href="{{route ('trailer.create')}}">Aggiungi</a>
+            <a class="nav-link active text-danger mx-4 fs-5 fw-semibold" aria-current="page" href="{{route ('trailers.create')}}">Aggiungi</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active text-danger mx-4 fs-5 fw-semibold" aria-current="page" href="#">Home</a>
+            <a class="nav-link active text-danger mx-4 fs-5 fw-semibold" aria-current="page" href="{{route('trailers.index')}}">MyTrailers</a>
           </li>
         </ul>
       </div>

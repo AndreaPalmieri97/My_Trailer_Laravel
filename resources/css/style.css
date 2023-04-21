@@ -9,3 +9,8 @@
     background-repeat: no-repeat;
     background-position: center;
 }
+
+.card-img-top {
+    height: 400px;
+
+}
