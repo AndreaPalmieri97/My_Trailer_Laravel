@@ -2,7 +2,7 @@
 
 <div class="container">
     <div class="row my-5">
-        <div class="col-12">
+        <div class="col-6">
             <h1 class="text-danger">Lista Trailers</h1>
         </div>
     </div>

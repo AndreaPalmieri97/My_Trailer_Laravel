@@ -1,4 +1,4 @@
-<div class="card" style="width: 16rem;">
+<div class="card border border-danger rounded" style="width: 15rem;">
     <img src="{{ Storage::url($trailer->img)}}" class="card-img-top" alt="...">
     <div class="card-body bg-dark">
       <h5 class="card-title text-center fw-semibold text-danger">{!! $trailer->title !!}</h5>

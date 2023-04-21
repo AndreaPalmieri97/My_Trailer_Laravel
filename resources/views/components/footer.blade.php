@@ -7,8 +7,8 @@
 
     <ul class="nav col-md-4 justify-content-end">
       <li class="nav-item"><a href="#" class="nav-link px-2 lead text-danger">Home</a></li>
-      <li class="nav-item"><a href="#" class="nav-link px-2 lead text-danger">Contacts</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 lead text-danger">Andrea Palmieri</a></li>
+      <li class="nav-item"><a href="#" class="nav-link px-2 lead text-danger">Contacts</a></li>
       <li class="nav-item"><a href="#" class="nav-link px-2 lead text-danger">About</a></li>
     </ul>
   </footer>

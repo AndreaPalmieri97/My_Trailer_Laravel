@@ -24,3 +24,4 @@ Route::post('/trailers/store', [TrailerController::class, 'store'])->name('trail
 Route::get('/trailers/index', [TrailerController::class, 'index'])->name('trailers.index');
 
 Route::get('/trailers/show/{id}', [TrailerController::class, 'show'])->name('trailers.show');
+
