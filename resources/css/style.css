@@ -36,3 +36,8 @@ body{
 
 }
 
+.card-delete {
+    height: 350px;
+    width: 40%;
+}
+

@@ -25,3 +25,5 @@ Route::get('/trailers/index', [TrailerController::class, 'index'])->name('traile
 
 Route::get('/trailers/show/{id}', [TrailerController::class, 'show'])->name('trailers.show');
 
+Route::get('/trailers/delete/{id}', [TrailerController::class, 'showdelete'])->name('trailers.delete');
+

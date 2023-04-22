@@ -41,5 +41,11 @@ class TrailerController extends Controller
         return view('trailers.show', compact('trailers'));
     }
 
+    public function showdelete($id) {
+
+        $trailers = Trailer::findOrFail($id);
+
+        return view('trailers.delete', compact('trailers'));
+    }
 
 }
