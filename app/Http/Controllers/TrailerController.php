@@ -53,7 +53,7 @@ class TrailerController extends Controller
         $trailers->delete();
         
         return redirect()->route('trailers.index')->with('message', 'Il tuo Trailer è stato cancellato correttamente');
-        
+
     }
 
 }
