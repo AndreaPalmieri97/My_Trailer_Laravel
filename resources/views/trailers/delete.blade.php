@@ -16,8 +16,14 @@
             </div>
 
             <div class="col-5 d-flex justify-content-evenly align-items-center my-5">
-                <a href="#" class="btn btn-danger my-3 p-2">Elimina Trailer</a>
-                <a href="{{route('trailers.index')}}" class="btn btn-success my-3 p-2">Torna indietro</a>
+                <form method="post" action="{{route('trailers.canc', $trailers)}}">
+                    @method('DELETE')
+                    @csrf
+                    <button class="w-100 btn btn-danger my-3 d-flex flex-column align-items-center">
+                      Elimina Trailer
+                    </button>
+                </form>
+                <a href="{{route('trailers.index')}}" class="btn btn-success my-3 p-2">Torna indietro </a>
             </div>
 
         </div>

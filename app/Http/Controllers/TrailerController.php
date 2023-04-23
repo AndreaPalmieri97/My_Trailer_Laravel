@@ -34,18 +34,26 @@ class TrailerController extends Controller
         return view('trailers.index', compact('trailers'));
     }
 
-    public function show($id) {
+    public function show(Trailer $trailers) {
 
-        $trailers = Trailer::findOrFail($id);
+        // $trailers = Trailer::findOrFail($trailer);
 
         return view('trailers.show', compact('trailers'));
     }
 
-    public function showdelete($id) {
+    public function showdelete(Trailer $trailers) {
 
-        $trailers = Trailer::findOrFail($id);
+        // $trailers = Trailer::findOrFail($trailer);
 
         return view('trailers.delete', compact('trailers'));
+    }
+
+    public function canc(Trailer $trailers) {
+
+        $trailers->delete();
+        
+        return redirect()->route('trailers.index')->with('message', 'Il tuo Trailer è stato cancellato correttamente');
+        
     }
 
 }

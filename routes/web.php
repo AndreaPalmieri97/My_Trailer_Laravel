@@ -23,7 +23,9 @@ Route::post('/trailers/store', [TrailerController::class, 'store'])->name('trail
 
 Route::get('/trailers/index', [TrailerController::class, 'index'])->name('trailers.index');
 
-Route::get('/trailers/show/{id}', [TrailerController::class, 'show'])->name('trailers.show');
+Route::get('/trailers/show/{trailers}', [TrailerController::class, 'show'])->name('trailers.show');
 
-Route::get('/trailers/delete/{id}', [TrailerController::class, 'showdelete'])->name('trailers.delete');
+Route::get('/trailers/delete/{trailers}', [TrailerController::class, 'showdelete'])->name('trailers.delete');
+
+Route::delete('/trailers/canc/{trailers}', [TrailerController::class, 'canc'])->name('trailers.canc');
 
