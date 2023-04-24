@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Trailer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class TrailerController extends Controller
 {
@@ -54,6 +55,34 @@ class TrailerController extends Controller
         
         return redirect()->route('trailers.index')->with('message', 'Il tuo Trailer è stato cancellato correttamente');
 
+    }
+
+    public function edit(Trailer $trailers) {
+
+        return view('trailers.edit', compact('trailers'));
+    }
+
+    public function update(Request $request, Trailer $trailers) {
+
+        $imgTrailer = $trailers->img;
+
+        $trailers->update(
+            [
+                'title' => $request->input('title'),
+                'genre' => $request->input('genre'),
+                'img' => ($request->file('img') ==null) ? $trailers->img : $request->file('img')->store('public/trailers'),
+                'abstract' => $request->input('abstract'),
+                'year' => $request->input('year'),
+                'director' => $request->input('director'),
+                'url' => $request->input('url')
+            ]);
+
+            if ($request->file('img') !== null) {
+
+                Storage::delete($imgTrailer);
+            }
+
+            return redirect()->route('home')->with('message', "Il trailer $trailers->title è stato modificato correttamente.");
     }
 
 }
