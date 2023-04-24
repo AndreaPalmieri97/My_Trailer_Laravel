@@ -51,6 +51,7 @@ class TrailerController extends Controller
 
     public function canc(Trailer $trailers) {
 
+        Storage::delete($trailers->img);
         $trailers->delete();
         
         return redirect()->route('trailers.index')->with('message', 'Il tuo Trailer è stato cancellato correttamente');
