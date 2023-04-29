@@ -32,3 +32,7 @@ Route::delete('/trailers/canc/{trailers}', [TrailerController::class, 'canc'])->
 Route::get('/trailers/edit{trailers}', [TrailerController::class, 'edit'])->name('trailers.edit');
 
 Route::put('/trailers/update{trailers}', [TrailerController::class, 'update'])->name('trailers.update');
+
+Route::get('/profile', [PublicController::class, 'profile'])->name('profile');
+
+

@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Trailer;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Storage;
 
 class TrailerController extends Controller
@@ -16,7 +17,7 @@ class TrailerController extends Controller
         
         Trailer::create(
             [
-                'user_id' => 1,
+                "user_id" => Auth::user()->id,
                 'title' => $request->input('title'),
                 'genre' => $request->input('genre'),
                 'img' => $request->file('img')->store('public/trailers'),

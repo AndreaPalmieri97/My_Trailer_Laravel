@@ -43,7 +43,6 @@ class User extends Authenticatable
     ];
 
     public function trailers() {
-        
         return $this->hasMany(Trailer::class);
     }
 }
