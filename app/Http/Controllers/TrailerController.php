@@ -16,6 +16,7 @@ class TrailerController extends Controller
         
         Trailer::create(
             [
+                'user_id' => 1,
                 'title' => $request->input('title'),
                 'genre' => $request->input('genre'),
                 'img' => $request->file('img')->store('public/trailers'),

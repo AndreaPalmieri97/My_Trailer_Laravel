@@ -10,6 +10,7 @@ class Trailer extends Model
     use HasFactory;
 
     protected $fillable = [
+        'user_id',
         'title',
         'genre',
         'img',
@@ -18,4 +19,9 @@ class Trailer extends Model
         'director',
         'url'
     ];
+
+   public function user(){
+
+    return $this->belongsTo(User::class);
+   }
 }

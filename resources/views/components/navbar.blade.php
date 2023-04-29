@@ -26,8 +26,8 @@
       @endguest
 
       @auth
-      <div class="d-flex justify-content-end align-items-end">
-          <a href="#" class="nav-link nav-hov active text-danger mx-2 fw-semibold">{{Auth::user()->name}}</a>
+      <div class="d-flex justify-content-end align-items-center">
+          <a href="#" class="nav-link nav-hov active text text-danger mx-4 fw-semibold">{{Auth::user()->name}}</a>
           <form action="{{route('logout')}}" method="POST">
           @csrf
             <button type="submit" class="btn btn-danger"><i class="fa-solid fa-right-from-bracket text-withe"></i></button>
