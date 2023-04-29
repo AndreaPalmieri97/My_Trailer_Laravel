@@ -1,4 +1,4 @@
-Login<x-layout>
+<x-layout>
 
     <div class="container">
         <div class="row my-5">

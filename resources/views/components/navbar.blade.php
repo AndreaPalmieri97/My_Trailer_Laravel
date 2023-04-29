@@ -17,10 +17,23 @@
           </li>
         </ul>
       </div>
+
+      @guest
       <div class="d-flex justify-content-end align-items-end">
         <a href="{{route('register')}}" class="nav-link nav-hov active text-danger mx-2 fw-semibold">Register</a>
         <a href="{{route('login')}}" class="nav-link nav-hov active text-danger mx-2 fw-semibold">Login</a>
       </div>
+      @endguest
+
+      @auth
+      <div class="d-flex justify-content-end align-items-end">
+          <a href="#" class="nav-link nav-hov active text-danger mx-2 fw-semibold">{{Auth::user()->name}}</a>
+          <form action="{{route('logout')}}" method="POST">
+          @csrf
+            <button type="submit" class="btn btn-danger"><i class="fa-solid fa-right-from-bracket text-withe"></i></button>
+          </form>
+      </div>
+      @endauth
     
   </div>
 </nav>
