@@ -18,11 +18,9 @@
         </ul>
       </div>
       <div class="d-flex justify-content-end align-items-end">
-        <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-danger" type="submit">Search</button>
-        </form>
-    </div>
+        <a href="{{route('register')}}" class="nav-link nav-hov active text-danger mx-2 fw-semibold">Register</a>
+        <a href="{{route('login')}}" class="nav-link nav-hov active text-danger mx-2 fw-semibold">Login</a>
+      </div>
     
   </div>
 </nav>
